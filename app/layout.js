@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     return (
         <html lang="en" data-theme="ikea" >
             <head>
-                <title>Next.js</title>
+                <title>Ikea Inspire</title>
             </head>
             <body className="relative">
                 <div className="flex jusitfy-center mt-8">

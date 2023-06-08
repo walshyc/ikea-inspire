@@ -26,7 +26,7 @@ const SearchPage = () => {
                 <input
                     type="text"
                     placeholder="sofa, chair, table, bed ..."
-                    className="input input-bordered input-primary w-full"
+                    className="input border-0 rounded-none border-secondary border-b-2 placeholder:text-primary/50 focus:outline-0 focus:ring-0 outline-0 ring-0 pl-0 w-full"
                     value={searchQuery}
                     onChange={handleSearch}
                 />
