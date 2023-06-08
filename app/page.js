@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ikeaLogo from '../public/Ikea_logo.svg';
 
+
 export default function Page() {
     const mainFeatures = [
         {
@@ -14,7 +15,7 @@ export default function Page() {
             title: "Blogs",
             description: "Stay updated with our latest articles on home decor, sustainability, and more.",
             image: "https://www.ikea.com/images/a-small-studio-with-a-vansbro-bright-green-2-seat-sofa-bed-b-e4e271bd007a75af466351b6828af61c.jpg?f=xxxl",
-            link: "/"
+            link: "/blogs"
         },
         {
             title: "Product Information",
