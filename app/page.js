@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import ikeaLogo from '../public/Ikea_logo.svg';
 
 export default function Page() {
     const mainFeatures = [
@@ -29,10 +31,10 @@ export default function Page() {
     ];
     return (
         <div className="flex flex-col overflow-scroll w-full items-center h-full pb-10  no-scrollbar">
-            <div className="flex flex-col">
-
-                <div className="">Welcome to </div>
-                <div className='text-primary text-4xl font-bold'>IKEA Inspire!</div>
+            <div className="flex flex-col gap-4 text-xl">
+                <div className='text-primary text-2xl font-bold flex items-center'>
+                    <Image src={ikeaLogo} alt="Ikea Logo" className='inline mr-2' />
+                    <span className='uppercase tracking-widest'>Inspire!</span></div>
                 <div>Your guide to creating beautiful spaces with <span className='text-primary font-bold'>Ikea</span></div>
             </div>
             <div className="flex flex-col mt-8">

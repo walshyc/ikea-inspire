@@ -61,7 +61,7 @@ const Navbar = () => {
               ref={menuRef}
               className={classNames(
                 isMobileMenuOpen ? 'top-100 bottom-[59px]' : 'top-0 -bottom-0',
-                "transition duration-150 ease-in-out flex flex-col font-bold justify-around rounded-tr-xl text-xs gap-4 absolute  -ml-2 uppercase tracking-widest mt-3 p-2 w-40 h-64 bg-primary text-secondary"
+                "transition duration-150 ease-in-out flex flex-col font-bold justify-around rounded-tr-xl text-xs gap-4 absolute  -ml-2 uppercase tracking-widest mt-3 p-2 w-[187.5px] h-64 bg-primary text-secondary"
               )}
             >
               <div>
@@ -72,7 +72,7 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-2"
+                    className="w-6 h-6 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -91,7 +91,7 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-2"
+                    className="w-6 h-6 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -110,7 +110,7 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-2"
+                    className="w-6 h-6 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -129,7 +129,7 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-2"
+                    className="w-6 h-6 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -148,7 +148,7 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-2"
+                    className="w-6 h-6 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -167,7 +167,7 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-2"
+                    className="w-6 h-6 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
