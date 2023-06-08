@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 const BlogPage = () => {
   return (
-    <div className="flex flex-col gap-4 overflow-scroll w-full items-start h-full pb-10 no-scrollbar">
+    <div className="flex flex-col gap-1 overflow-scroll w-full items-start h-full pb-10 no-scrollbar">
       <div className="prose-2xl font-bold text-primary">Inspire Blogs</div>
-      <div className="grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 gap-4">
         {blogs.map((blog) => (
           <Link href={`/blogs/${blog.id}`} key={blog.id}>
             <div

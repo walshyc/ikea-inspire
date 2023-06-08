@@ -61,18 +61,18 @@ const Navbar = () => {
               ref={menuRef}
               className={classNames(
                 isMobileMenuOpen ? 'top-100 bottom-[59px]' : 'top-0 -bottom-0',
-                "transition duration-150 ease-in-out flex flex-col font-bold justify-around rounded-tr-xl text-xs gap-4 absolute  -ml-2 uppercase tracking-widest mt-3 p-2 w-[187.5px] h-64 bg-primary text-secondary"
+                'transition duration-150 ease-in-out flex flex-col font-bold justify-around rounded-tr-xl text-[10px] gap-4 absolute  -ml-2 uppercase tracking-widest mt-3 p-2 w-[187.5px] h-64 bg-primary text-secondary'
               )}
             >
               <div>
-                <a>
+                <Link href="/advice">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-4"
+                    className="w-4 h-4 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -81,17 +81,17 @@ const Navbar = () => {
                     />
                   </svg>
                   Design Advice
-                </a>
+                </Link>
               </div>
               <div>
-                <a>
+                <Link href="/blogs">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-4"
+                    className="w-4 h-4 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -100,17 +100,17 @@ const Navbar = () => {
                     />
                   </svg>
                   Blogs
-                </a>
+                </Link>
               </div>
               <div>
-                <a>
+                <Link href="/info">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-4"
+                    className="w-4 h-4 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -119,17 +119,17 @@ const Navbar = () => {
                     />
                   </svg>
                   Product Info
-                </a>
+                </Link>
               </div>
               <div>
-                <a>
+                <Link href="/search">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-4"
+                    className="w-4 h-4 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -138,17 +138,17 @@ const Navbar = () => {
                     />
                   </svg>
                   Search
-                </a>
+                </Link>
               </div>
               <div>
-                <a>
+                <Link href="/account">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-4"
+                    className="w-4 h-4 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -157,17 +157,17 @@ const Navbar = () => {
                     />
                   </svg>
                   Account
-                </a>
+                </Link>
               </div>
               <div>
-                <a>
+                <a href="https://www.ikea.com/" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 inline mr-4"
+                    className="w-4 h-4 inline mr-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -213,7 +213,7 @@ const Navbar = () => {
             </svg>
           </Link>
         </button>
-        <button className="btn btn-ghost btn-circle">
+        {/* <button className="btn btn-ghost btn-circle">
           <div className="indicator">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -232,7 +232,7 @@ const Navbar = () => {
 
             <span className="badge badge-xs badge-primary indicator-item" />
           </div>
-        </button>
+        </button> */}
       </div>
     </div>
   );
