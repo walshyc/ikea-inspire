@@ -28,7 +28,7 @@ export default function Page() {
         }
     ];
     return (
-        <div className="flex flex-col overflow-scroll w-full items-center h-full pb-10">
+        <div className="flex flex-col overflow-scroll w-full items-center h-full pb-10  no-scrollbar">
             <div className="flex flex-col">
 
                 <div className="">Welcome to </div>
