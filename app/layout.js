@@ -8,8 +8,8 @@ export default function Layout({ children }) {
             <head>
                 <title>Ikea Inspire</title>
             </head>
-            <body className="relative">
-                <div className="flex jusitfy-center mt-8">
+            <body className="relative bg-gradient-to-b from-blue-800 via-blue-500 to-yellow-600 min-h-screen">
+                <div className="flex jusitfy-center pt-8">
                     <div className="mockup-phone">
                         <div className="camera"></div>
                         <div className="display">
