@@ -1,11 +1,12 @@
+'use client';
 import React from 'react';
 import { blogs } from '../../public/blogs';
 import Link from 'next/link';
 
 const BlogPage = () => {
   return (
-    <div className="flex flex-col gap-1 overflow-scroll w-full items-start h-full pb-10 no-scrollbar">
-      <div className="prose-2xl font-bold text-primary">Inspire Blogs</div>
+    <div className="prose flex flex-col gap-1 overflow-scroll w-full items-start h-full pb-10 no-scrollbar">
+      <h1 className=" text-primary">Inspire Blogs</h1>
       <div className="grid grid-cols-1 gap-4">
         {blogs.map((blog) => (
           <Link href={`/blogs/${blog.id}`} key={blog.id}>
@@ -17,11 +18,18 @@ const BlogPage = () => {
                 <h2 className="text-yellow-50 text-xl font-semibold mb-4">
                   {blog.title}
                 </h2>
-                {/* <p className="text-white">{blog.content}</p> */}
               </div>
             </div>
           </Link>
         ))}
+      </div>
+      <div className="flex justify-between mt-8">
+        <button
+          className="btn-secondary btn"
+          onClick={() => window.history.back()}
+        >
+          Back
+        </button>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ const SingleBlogPage = ({ params }) => {
 
       <div className="flex justify-between mt-8">
         <button
-          className="px-4 py-2 rounded bg-secondary text-primary hover:bg-yellow-700"
+          className="btn-secondary btn"
           onClick={() => window.history.back()}
         >
           Back

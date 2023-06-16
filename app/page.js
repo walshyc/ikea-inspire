@@ -21,7 +21,7 @@ export default function Page() {
             title: "Product Information",
             description: "Learn more about IKEA products that can enhance your space.",
             image: "https://www.ikea.com/images/billy-series-080a2ee1d9108a599c4b9aaef027edd3.jpg?f=s",
-            link: "/info"
+            link: "/search"
         },
         {
             title: "Ask an IKEA Expert",
