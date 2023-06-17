@@ -21,7 +21,7 @@ const SearchPage = () => {
 
     return (
         <div className="flex flex-col overflow-scroll w-full h-full pb-10 no-scrollbar">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 prose">
                 <h1 className="text-primary">Search Ikea</h1>
                 <input
                     type="text"
