@@ -21,7 +21,6 @@ const AskPage = () => {
       .then((ans) => {
         console.log(ans);
         // scroll to answer id
-        ref.current?.scrollIntoView({ behavior: 'smooth' });
         setAnswer(ans.text);
       });
   };
