@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         const aiResult = await openai.createCompletion({
             model: "text-davinci-003",
             prompt,
-            max_tokens: 100,
+            max_tokens: 2000,
             temperature: 0,
         });
        
@@ -29,7 +29,7 @@ export default async function handler(req, res) {
 
     } catch (error) {
         console.log(error.message)
-        response = 123
+        response = "Sorry there has been an error!"
     }
 
     res.status(200).json({ text: response })
