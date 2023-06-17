@@ -21,6 +21,11 @@ export default async function handler(req, res) {
         });
        
         response = aiResult.data.choices[0].text?.trim() || "Sorry there was a problem!";
+        // remove the ? only at the start of the response
+        if (response.startsWith('?')) {
+            response = response.substring(1);
+        }
+
 
     } catch (error) {
         console.log(error.message)

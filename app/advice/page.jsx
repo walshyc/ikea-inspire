@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import React from 'react';
 import { advice } from '../../public/advice';
 import Link from 'next/link';
@@ -6,10 +6,12 @@ import Link from 'next/link';
 const BlogPage = () => {
   console.log(advice);
   return (
-    <div className="flex flex-col gap-1 overflow-scroll prose w-full items-start h-full pb-10 no-scrollbar">
-      <h1 className=" text-primary">
-        Interior Design Advice
-      </h1>
+    <div className="flex flex-col gap-1 overflow-scroll w-full items-start h-full pb-10 no-scrollbar">
+      <div className="prose">
+       
+        <h1 className=" text-primary mb-3">Interior Design Advice</h1>
+      </div>
+
       <div className="grid grid-cols-1 gap-8 w-full">
         {advice.map((advice) => (
           <Link href={`/advice/${advice.id}`} key={advice.id}>
@@ -17,7 +19,7 @@ const BlogPage = () => {
               className="bg-cover bg-center rounded-lg"
               style={{ backgroundImage: `url(${advice.image})` }}
             >
-              <div className="bg-black bg-opacity-60 rounded-lg p-12">
+              <div className="bg-black bg-opacity-60 rounded-lg p-12 ">
                 <h2 className="text-yellow-50 text-3xl font-semibold mb-4">
                   {advice.name}
                 </h2>

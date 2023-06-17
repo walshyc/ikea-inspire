@@ -41,9 +41,9 @@ const SingleAdvicePage = ({ params }) => {
           {str}
         </p>
       ))} */}
-
-      <button className="btn btn-primary my-2 ">Talk to an Ikea Expert</button>
-
+      <Link href="/ask">
+        <button className="btn btn-primary my-2 ">Ask an Ikea Expert</button>
+      </Link>
       <div className="flex justify-between mt-8">
         <button
           className="btn-secondary btn"
