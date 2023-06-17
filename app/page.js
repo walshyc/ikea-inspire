@@ -44,8 +44,8 @@ export default function Page() {
                     {mainFeatures.map((feature) => {
                         return (
                             <Link href={feature.link} key={feature.title} >
-                                <div className="flex flex-col w-full bg-center bg-cover" style={{ backgroundImage: `url(${feature.image})` }}>
-                                    <div className="p-4 py-10 bg-gray-800 bg-opacity-80">
+                                <div className="flex flex-col w-full bg-center bg-cover rounded-lg" style={{ backgroundImage: `url(${feature.image})` }}>
+                                    <div className="p-4 py-10 bg-gray-800 bg-opacity-80 rounded-lg">
                                         <div className="text-xl font-bold text-secondary">{feature.title}</div>
                                         <div className="text-xs text-blue-50">{feature.description}</div>
                                     </div>

@@ -36,6 +36,7 @@ const AskPage = () => {
       <h1 className="text-primary text-3xl"> Ask an Ikea Expert</h1>
       <img
         className="w-full h-32 object-cover rounded-lg m-0"
+        alt="Ikea staff"
         src="https://www.ikea.com/images/an-ikea-co-worker-dressed-in-a-yellow-uniform-waving-to-a-co-30869d4c21d2b8f29c40e4a69c502fe0.jpg?f=s"
       ></img>
       <form onSubmit={handleSubmit} className="space-y-4 w-full">
@@ -65,7 +66,7 @@ const AskPage = () => {
         </div>
         {answer && (
           <div ref={ref} className="flex flex-col gap-1">
-            <p className="text-primary my-0 font-bold text-2xl">Ikea Expert's reply</p>
+            <p className="text-primary my-0 font-bold text-2xl">Ikea Expert&apos;s reply</p>
             <p className="text-primary">{answer}</p>
           </div>
         )}
